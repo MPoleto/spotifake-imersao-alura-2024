@@ -8,10 +8,10 @@ body {
   left: 0;
   bottom: 0;
   padding: 12px;
-  width: 350px;
+  width: 300px;
 }
 
-.sidebar__navigation/*, .sidebar__library*/ {
+.sidebar__navigation {
   background-color: #121212;
   border-radius: 8px;
   padding: 16px 0 0 16px;
@@ -174,122 +174,3 @@ body {
   padding: 8px;
   cursor: pointer;
 }
-
-
-
-/* Minha construção */
-
-/* .sidebar__library {
-  margin-top: 8px;
-  padding-left: 0;
-  color: #b3b3b3;
-  font-family: "DM Sans", sans-serif;
-}
-
-.sidebar__library__title {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 10px 10px;
-}
-
-.sidebar__library__title i {
-  border-radius: 50%;
-  padding: 9px 10px;
-  
-}
-
-.sidebar__library__title i:hover {
-  background-color: #22222271;
-}
-
-.library__title {
-  font-weight: 600;
-  font-size: 16px;
-  display: flex;
-  padding: 9px 10px;
-  gap: 10px;
-  transition: .4s ease-in;
-}
-
-.library__title:hover {
-  color: #fff;
-  cursor: pointer;
-}
-
-.sidebar__library__playlist {
-  margin: 15px 8px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  background-color: #222;
-  color: #fff;
-}
-
-.sidebar__library__playlist h3 {
-  font-size: 15px;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-
-.sidebar__library__playlist p {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.sidebar__library__playlist a {
-  text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 20px;
-  align-self: flex-start;
-  padding: 8px 12px;
-  margin-top: 24px;
-}
-
-.sidebar__library__playlist a:hover {
-  transform: scale(1.1);
-}
-
-
-.sidebar__library .sidebar__links {
-  padding: 10px 20px;
-}
-
-.sidebar__library .sidebar__links ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sidebar__library .sidebar__links ul li a {
-  padding-right: 15px;
-  font-size: 10px;
-  font-weight: 300;
-}
-
-.language {
-  padding: 15px 0 40px 20px;
-  width: fit-content;
-}
-
-.language a {
-  text-decoration: none;
-  color: #b3b3b3;
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 20px;
-  border: 1px solid #b3b3b3;
-  padding: 5px 12px;
-}
-
-.language a .fa-globe {
-  padding-right: 3px;
-}
-
-.language:hover {
-  transform: scale(1.04);
-} */
