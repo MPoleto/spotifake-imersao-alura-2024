@@ -5,56 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./src/assets/img/icons/favicon.png" type="image/x-icon">
   <link
-      href="https://fonts.googleapis.com/css2?family=Alice&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Dancing+Script:wght@400;500;600;700&family=Oranienbaum&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alice&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Dancing+Script:wght@400;500;600;700&family=Oranienbaum&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
   <link rel="stylesheet" href="./src/styles/reset.css">
   <link rel="stylesheet" href="./src/styles/style.css">
-  <!-- <script src="https://kit.fontawesome.com/8a65fd670c.js" crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
 
   <title>Spotifake - Imersão Alura</title>
 </head>
 <body>
-  <div class="sidebar">
+  <aside class="sidebar">
     <nav class="sidebar__navigation">
       <div class="logo">
         <a href="">
-          <img src="./src/assets/img/icons/logo-spotify.png" alt="logo do spotify">
+          <img src="./src/assets/img/icons/logo-spotify.png" alt="logo do spotify" title="Spotify-fake">
         </a>
       </div>
-        <div>
-          <ul>
-            <li>
-              <a href="">
-                <span class="fa fa-home"></span>
-                <span>Início</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="fa fa-search"></span>
-                <span>Buscar</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <ul>
+        <li>
+          <a href="">
+            <span class="fa fa-home"></span>
+            <span>Início</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="fa fa-search"></span>
+            <span>Buscar</span>
+          </a>
+        </li>
+      </ul>
     </nav>
-    <nav class="sidebar__library">
-      <div class="sidebar__library__title">
-        <div class="library__title">
+
+    <div class="sidebar__navigation library">
+      <section class="sidebar__library__content">
+        <button class="library__button">
           <span class="fa fa-book"></span>
-          <h2>Sua Biblioteca</h2>
-        </div>
-        <i class="fa fa-plus"></i>
-      </div>
-      <div class="sidebar__library__playlist">
-        <h3>Crie sua primeira playlist</h3>
+          <span>Sua Biblioteca</span>
+        </button>
+        <span class="fa fa-plus"></span>
+      </section>
+
+      <section class="sidebar__playlist">
+        <h2>Crie sua primeira playlist</h2>
         <p>É fácil, vamos te ajudar.</p>
-        <a href="">Criar playlist</a>
-      </div>
-      <div class="sidebar__links">
+        <button class="playlist__button">Criar playlist</button>
+      </section>
+
+      <section class="sidebar__links">
         <ul>
           <li><a href="">Legal</a></li>
           <li><a href="">Centro de Privacidade</a></li>
@@ -63,17 +63,26 @@
           <li><a href="">Sobre anúncios</a></li>
           <li><a href="">Acessibilidade</a></li>
           <li><a href="">Notice at Collection</a></li>
-          <li><a href="">Your Privacy Choices</a></li>
+          <li><a href="">Definições de cookies</a></li>
           <li><a href="">Cookies</a></li>
         </ul>
-      </div>
-      <div class="language">
-        <a href="">
+      </section>
+
+      <section class="sidebar__languages">
+        <button class="languages__button">
           <span class="fa fa-globe"></span>
           <span>Português do Brasil</span>
-        </a>
-      </div>
-    </nav>
-  </div>
+        </button>
+      </section>
+    </div>
+  </aside>
+
+  <a href="" class="footer">
+    <div class="footer__content">
+      <p>Testar o Premium de graça</p>
+      <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+    </div>
+    <div class="footer__button">Inscreva-se grátis</div>
+  </a>
 </body>
 </html>
