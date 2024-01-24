@@ -25,3 +25,14 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
 
 **Resultado do dia 1**  
 ![](./src/assets/img/img-readme/resultado-dia-1.gif)
+
+### Dia 2
+- CSS
+  - Flexbox
+  - Pseudo-classes
+- Finalizar menu lateral
+- Desafio:
+  - Fazer o rodapé *(footer)*
+
+**Resultado do dia 2**
+![](./src/assets/img/img-readme/resultado-dia-2.gif)
