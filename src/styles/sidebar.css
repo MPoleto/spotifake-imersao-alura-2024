@@ -2,7 +2,10 @@ body {
   background-color: var(--bg-body-color);
   font-family: var(--font-dm-sans);
   color: var(--font-color-principal);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: #a7a7a7 var(--bg-sidebar-color);
+  scrollbar-width: thin;
 }
 
 /* MENU NAVEGAÇÃO LATERAL */
@@ -64,6 +67,7 @@ body {
   justify-content: space-between;
   margin-top: 8px;
   padding: 0px;
+  height: 30.375rem;
 }
 
 .sidebar__library__content {
