@@ -1,0 +1,16 @@
+:root {
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --border-radius-sidebar: 8px;
+  --border-radius-button: 20px;
+
+  /* CORES */
+
+  --bg-icon-color: #131313;
+  --bg-arrow-color: rgba(0,0,0,0.5);
+  --bg-body-color: #000;
+  --bg-sidebar-color: #121212;
+  --bg-playlist-color: #242424;
+  --font-color-principal: #b3b3b3;
+  --font-color-secondary: #fff;
+}

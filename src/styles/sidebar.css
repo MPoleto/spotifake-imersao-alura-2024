@@ -1,6 +1,11 @@
 body {
-  background-color: #000;
+  background-color: var(--bg-body-color);
+  font-family: var(--font-dm-sans);
+  color: var(--font-color-principal);
+  overflow: hidden;
 }
+
+/* MENU NAVEGAÇÃO LATERAL */
 
 .sidebar {
   position: fixed;
@@ -8,18 +13,17 @@ body {
   left: 0;
   bottom: 0;
   padding: 8px;
-  width: 365px;
+  width: 350px;
 }
 
 .sidebar__navigation {
-  background-color: #121212;
-  border-radius: 8px;
+  background-color: var(--bg-sidebar-color);
+  border-radius: var(--border-radius-sidebar);
   padding: 18px 0 0 22px;
-  font-family: "DM Sans", sans-serif;
 }
 
 .sidebar__navigation .logo {
-  background: #121212;
+  background: transparent;
   display: flex;
 }
 
@@ -37,7 +41,7 @@ body {
 }
 
 .sidebar nav ul li a {
-  color: #b3b3b3;
+  color: var(--font-color-principal);
   font-weight: 600;
   font-size: 16px;
   transition: .3s;
@@ -49,16 +53,17 @@ body {
 }
 
 .sidebar nav ul li a:hover {
-  color: #fff;
+  color: var(--font-color-secondary);
 }
+
+/* BIBLIOTECA - MENU */
 
 .library {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 8px;
-  padding: 0px 0 0 0;
-  color: #b3b3b3;
+  padding: 0px;
 }
 
 .sidebar__library__content {
@@ -72,10 +77,9 @@ body {
   display: flex;
   gap: 15px;
   padding: 8px 9px;
-  color: #b3b3b3;
-  border: none;
+  color: var(--font-color-principal);
   background-color: transparent;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans);
   font-weight: 600;
   font-size: 16px;
   transition: .3s;
@@ -86,21 +90,22 @@ body {
 }
 
 .library__button:hover {
-  color: #fff;
-  cursor: pointer;
+  color: var(--font-color-secondary);
 }
 
 .sidebar__library__content > span {
   padding: 8px 9px;
-  border-radius: 100%;
+  border-radius: 50%;
   transition: .2s;
 }
 
 .sidebar__library__content > span:hover {
-  color: #fff;
+  color: var(--font-color-secondary);
   background-color: #181818;
   cursor: pointer;
 }
+
+/* PLAYLIST - CARD */
 
 .sidebar__playlist {
   display: flex;
@@ -110,9 +115,9 @@ body {
   gap: 16px;
   margin: 5px 8px;
   padding: 20px 20px 16px;
-  border-radius: 10px;
-  background-color: #242424;
-  color: #eee;
+  border-radius: var(--border-radius-sidebar);
+  background-color: var(--bg-playlist-color);
+  color: var(--font-color-secondary);
 }
 
 .sidebar__playlist h2 {
@@ -126,13 +131,12 @@ body {
 }
 
 .sidebar__playlist .playlist__button {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans);
   font-size: 12px;
   font-weight: 600;
-  color: #000;
-  background-color: #fff;
-  border-radius: 20px;
-  border: none;
+  color: var(--bg-body-color);
+  background-color: var(--font-color-secondary);
+  border-radius: var(--border-radius-button);
   padding: 8px 16px;
   margin-top: 6px; 
 }
@@ -141,6 +145,8 @@ body {
   background-color: #eee;
   transform: scale(1.05);
 }
+
+/* LINKS - COOKIES */
 
 .sidebar__links {
   margin: 20px 0 12px;
@@ -157,21 +163,22 @@ body {
 
 .sidebar__links ul li a {
   padding-right: 15px;
-  color: #b3b3b3;
+  color: var(--font-color-principal);
   font-size: 11px;
   font-weight: 300;
 }
 
+/* IDIOMA - BOTÃO */
+
 .languages__button {
-  border-radius: 20px;
+  border-radius: var(--border-radius-button);
   border: 1px solid #878787;
   background-color: transparent;
-  color: #fff;
-  font-family: "DM Sans", sans-serif;
+  color: var(--font-color-secondary);
+  font-family: var(--font-dm-sans);
   font-size: 12px;
   font-weight: 600;
   padding: 8px 15px;
-  cursor: pointer;
   margin: 8px 20px 30px;
 }
 
@@ -180,56 +187,7 @@ body {
 }
 
 .languages__button:hover {
-  border: 1px solid #fff;
+  border: 1px solid var(--font-color-secondary);
   transform: scale(1.04);
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0px 8px 8px;
-  padding: 10px 16px 8px;
-  background-image: linear-gradient(to right, #42047e, #05c07b);
-  color: #fff;
-  font-family: "DM Sans", sans-serif;
-  cursor: pointer;
-  overflow: auto;
-}
-
-.footer .footer__content {
-  min-width: 600px;
-}
-
-.footer .footer__content p:first-child {
-  font-size: 14px;
-  font-weight: 600;
-  padding-bottom: 2px;
-}
-
-.footer .footer__content p:last-child {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 24px;
-}
-
-.footer .footer__button {
-  flex-shrink: 0;
-  text-align: center;
-  color: #000;
-  background-color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 30px;
-  padding: 16px 30px;
-  margin-right: 10px;
-}
-
-.footer .footer__button:hover {
-  font-weight: 900;
-  transform: scale(1.05);
-}

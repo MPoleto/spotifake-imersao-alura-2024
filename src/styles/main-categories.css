@@ -1,0 +1,39 @@
+.main-container__categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 8px;
+  padding: 50px 30px;
+  color: var(--font-color-secondary);
+  background-color: var(--bg-sidebar-color);
+  border-radius: var(--border-radius-sidebar);
+}
+
+.greetings__title {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 25px;
+}
+
+.greetings__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 25px 0px;
+}
+
+/* TESTE */
+
+.cards__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card__item {
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(-135deg, #42047e, #05c07b);
+  border-radius: var(--border-radius-sidebar);
+}
