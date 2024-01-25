@@ -36,3 +36,14 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
 
 **Resultado do dia 2**
 ![](./src/assets/img/img-readme/resultado-dia-2.gif)
+
+### Dia 3
+- Melhorar estrutura do projeto
+- Refatorar o código
+  - Usar váriaveis CSS
+- Criar o menu superior *(header)*
+- Desafio:
+  - Construir a seção principal da página com os cards de “Boa tarde” e “Navegar por todas as seções”
+
+**Resultado do dia 3**
+![](./src/assets/img/img-readme/resultado-dia-3.gif)
