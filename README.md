@@ -47,3 +47,20 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
 
 **Resultado do dia 3**
 ![](./src/assets/img/img-readme/resultado-dia-3.gif)
+
+### Dia 4
+
+- Adicionar os cards da página inicial
+  - Usar o CSS Grid Layout;
+  - Utilizar media queries para responsividade
+- Introduzir o JavaScript no projeto
+  - Utilizar o método Promises do JavaScript
+
+- Comando para rodar api fake
+```
+json-server --watch api-artists/artists.json --port 3000
+```
+
+- Desafios:
+  - Teste fazer mais cards se baseie na página do Spotify e aprenda muito mais;
+  - Crie um arquivo API JSON diferente e explore mais. 
