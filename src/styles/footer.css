@@ -10,9 +10,6 @@
   padding: 10px 16px 8px;
   background-image: linear-gradient(to right, #42047e, #05c07b);
   color: var(--font-color-secondary);
-  /* overflow: auto;
-  scrollbar-color: #a7a7a7 var(--bg-sidebar-color);
-  scrollbar-width: thin; */
 }
 
 .footer .footer__content {
