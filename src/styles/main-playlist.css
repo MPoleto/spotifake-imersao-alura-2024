@@ -7,7 +7,7 @@
   color: var(--font-color-secondary);
   background-color: var(--bg-sidebar-color);
   border-radius: var(--border-radius-sidebar);
-  max-height: 78vh;
+  max-height: 78.2vh;
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-color: var(--bg-playlist-color) var(--bg-sidebar-color);
@@ -30,7 +30,7 @@
 .offer__scroll-container {
   max-height: 43vh;
   margin: 22px;
-  /* overflow-y: auto; */
+  padding-bottom: 580px;
 }
 
 .offer__scroll-container::-webkit-scrollbar {
@@ -41,7 +41,6 @@
   background-color: transparent;
 }
 /* FIM SCROLL */
-
 .offer__list-item {
   display: grid;
   justify-items: center;
@@ -49,12 +48,6 @@
   gap: 12px;
   grid-gap: 12px;
   margin-bottom: 16px;
-  
-  /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-  display: grid;
-  gap: 12px;
-  grid-gap: 16px;
-  margin: 0 auto;
 }
 
 .cards {
@@ -68,7 +61,7 @@
 .cards span {
   padding: 16px;
   position: absolute;
-  color: #fff;
+  color: var(--font-color-secondary);
   font-size: 24px;
   font-weight: 700;
 }
@@ -124,7 +117,7 @@
 .offer__list-item img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   height: auto;
   width: 107px;
   transform: rotate(25deg) translate(18%, -2%);
@@ -184,7 +177,7 @@
 .card-text {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: var(--font-color-secondary);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -243,23 +236,3 @@
 /* FIM CARD ARTISTA */
 
 
-/* TESTE */
-/* 
-.cards__container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 50px;
-  padding: 0 30px;
-  /* overflow: auto;
-  scrollbar-color: #a7a7a7 var(--bg-sidebar-color);
-  scrollbar-width: thin; */
-  /*
-}
-.card__item {
-  width: 250px;
-  height: 250px;
-  background-image: linear-gradient(-135deg, #41047e84, #05c07b81);
-  border-radius: var(--border-radius-sidebar);
-} */

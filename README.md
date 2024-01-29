@@ -25,3 +25,38 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
 
 **Resultado do dia 1**  
 ![](./src/assets/img/img-readme/resultado-dia-1.gif)
+
+### Dia 2
+- CSS
+  - Flexbox
+  - Pseudo-classes
+- Finalizar menu lateral
+- Desafio:
+  - Fazer o rodapé *(footer)*
+
+**Resultado do dia 2**  
+![](./src/assets/img/img-readme/resultado-dia-2.gif)
+
+### Dia 3
+- Melhorar estrutura do projeto
+- Refatorar o código
+  - Usar váriaveis CSS
+- Criar o menu superior *(header)*
+- Desafio:
+  - Construir a seção principal da página com os cards de “Boa tarde” e “Navegar por todas as seções”
+
+**Resultado do dia 3**  
+![](./src/assets/img/img-readme/resultado-dia-3.gif)
+
+### Dia 4
+- Adicionar os cards da página inicial
+- Utilizar media queries para responsividade
+- Introduzir o JavaScript no projeto
+  - Método Promises
+- Adicionar arquivo `.json` com dados para simular uma api com o `json.server`, para testar o campo de busca.
+- Desafios:
+  - Teste fazer mais cards se baseie na página do Spotify e aprenda muito mais;
+  - Crie um arquivo API JSON diferente e explore mais.
+
+**Resultado do dia 4**  
+![](./src/assets/img/img-readme/resultado-dia-4.gif)
