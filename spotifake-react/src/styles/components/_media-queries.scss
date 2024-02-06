@@ -1,0 +1,157 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+@media screen and (max-width: 1369px) {
+  .sidebar__links {
+    margin: .5rem 0;
+  }
+  
+  .languages__button {
+    margin: .5rem 1rem;
+  }
+
+  .header__navigation {
+    .navigation {
+      .header__search {
+        width: 22.5rem;
+      }
+    }
+  }
+
+  .offer__scroll-container {
+    padding-bottom: 53.5vw;
+
+    .offer__list-item {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1.5rem;
+      
+      .cards {
+        width: 14.65vw;
+        height: 14.65vw; 
+      }
+    }
+  } 
+
+  .main__footer__links {
+    .links-empresa {
+      width: 100%;
+      &__item {
+        flex-basis: 167px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1073px) {
+  .header__navigation {
+    .navigation {
+      .header__search {
+        width: 29vw;
+      }
+    }
+
+    .header__login {
+      .login {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .offer__scroll-container {
+    padding-bottom: 90vw;
+
+    .offer__list-item {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+
+      .cards {
+        width: 18.65vw;
+        height: 18.65vw; 
+      }
+    }
+  }   
+}
+
+@media (max-width: 873px) {
+  .app__container {
+    &__display {
+      height: calc(100vh - 2vw);
+    }
+  }
+
+  .header__navigation {
+    padding: .5rem 1rem;
+    .navigation {
+      .arrow-right {
+        display: none;
+      }
+
+      .header__search {
+        width: 16vw;
+      }
+    }
+    .header__login {
+      .login {
+        margin-right: 0rem;
+      }
+    }
+  }
+
+  .playlist-container {
+
+    .offer__scroll-container {
+      margin: 1rem;
+      padding-bottom: 101rem;
+      
+  
+      .offer__list-item {
+        grid-template-columns: 1fr 1fr;
+
+        .cards {
+          width: 22.9vw;
+          height: 22.9vw; 
+          min-width: 11.5rem;
+          min-height: 11.5rem; 
+        }
+      }
+    }
+
+    .main__footer__links {
+      flex-direction: column;
+    }
+
+    .social-midias {
+      margin-bottom: 1.5rem;
+      flex-wrap: nowrap;
+    }
+  }
+
+  footer {
+    .footer {
+      gap: .5rem;
+      &__content {
+        min-width: 37.5rem;
+        
+        & p:last-child {
+          font-size: .95rem;
+          font-weight: 500;
+          line-height: 1.5rem;
+        }
+      }
+
+      &__button {
+        padding: 1rem .3rem;
+        margin-right: .7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  .app__container {
+    &__display {
+      height: 95.65vh;
+    }
+  }
+}

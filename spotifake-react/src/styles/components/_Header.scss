@@ -1,0 +1,109 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: .5rem 1.5rem;
+  border-radius: vars.$border-radius-section vars.$border-radius-section 0 0;
+  background-color: #090909;
+  z-index: 2;
+
+  /* SETAS */
+  .navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+
+    .arrow-left, 
+    .arrow-right {
+      width: 2rem;
+      height: 2rem;
+      background-color: vars.$bg-color-arrow;
+      border-radius: 50%;
+    }
+    .arrow-left {
+      background: vars.$bg-color-icon url('../../assets/icons/small-left.png') no-repeat center;
+    }
+    .arrow-right {
+      background: vars.$bg-color-icon url('../../assets/icons/small-right.png') no-repeat center;
+    }
+
+    /* BARRA DE PESQUISA */
+
+    .header__search {
+      display: flex;
+      align-items: center;
+      width: 23rem;
+      height: 3rem;
+      border-radius: 4rem;
+      border: 1px solid transparent;
+      background: url('../../assets/icons/search.png') no-repeat .65rem center;
+      background-size: 1rem;
+      background-color: vars.$bg-color-playlist;
+      
+      &:hover {
+        background-color: #272727;
+        border: 1px ridge #333;
+      }
+
+      input {
+        background: transparent;
+        border: none;
+        padding: 0 6.25vw 0 2.2rem;
+        font-weight: 500;
+        font-family: vars.$font-dm-sans;
+        color: vars.$font-color-secondary;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        outline: none;
+      }
+    }
+  }
+  /* LOGIN */
+  .header__login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .subscribe {
+      flex-shrink: 0;
+      align-self: center;
+      margin-right: 2vw;
+      color: #a7a7a7;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: vars.$font-dm-sans;
+      background-color: transparent;
+      transition: .3s;
+
+      &:hover {
+        color: vars.$font-color-secondary;
+        transform: scale(1.02);
+      }
+    }
+    .login {
+      @include mixins.white-button(1rem, 4rem);
+      width: 6.25rem;
+      height: 3rem;
+      margin-right: .75rem;
+      
+      &:hover {
+        @include mixins.button-hover();
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+
+
+
+

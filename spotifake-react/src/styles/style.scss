@@ -1,0 +1,28 @@
+@use './reset.css';
+@use './abstracts/vars';
+@use './components/App';
+@use './components/Sidebar';
+@use './components/Footer';
+@use './components/Main';
+@use './components/Header';
+@use './components/Playlist';
+@use './components/Greeting';
+@use './components/CardList';
+@use './components/ResultSearch';
+@use './components/media-queries';
+
+:root {
+  overflow: auto;
+  scrollbar-color: vars.$bg-color-scrollbar vars.$bg-color-body;
+  scrollbar-width: initial;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 50rem;
+  min-height: 37.5rem;
+  background-color: vars.$bg-color-body;
+}

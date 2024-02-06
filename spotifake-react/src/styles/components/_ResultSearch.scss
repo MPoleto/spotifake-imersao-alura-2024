@@ -1,0 +1,120 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+/* CARD ARTISTA */
+
+.artist {
+  $column-count: 5;
+  $grid-gap: 1.5rem;
+  $min-container-width: 23.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#result-artist {
+  padding: 1.25rem 2.5rem;
+
+  .grid-container {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-width: 47.94rem;
+
+    .artist-card {
+      background: #181818;
+      border-radius: vars.$border-radius-section;
+      -ms-flex: 1;
+      flex: 1;
+      isolation: isolate;
+      padding: 1rem;
+      position: relative;
+      transition: background-color 0.3s ease;
+      width: 100%;
+
+      .card-img {
+        padding-bottom: 100%;
+        position: relative;
+        width: 100%;
+        margin-bottom: 1rem;
+        
+        .artist-img {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          border-radius: 50%;
+        }
+        
+        .play {
+          position: relative;
+          
+          span {
+            opacity: 0;
+            position: absolute;
+            right: .625rem;
+            top: 7.5rem;
+            padding: 1rem 1.1rem;
+            background-color: #1db954;
+            border-radius: 100%;
+            font-size: 1rem;
+            color: vars.$bg-color-body;
+            transition: all ease 0.4s;
+
+            &:hover {
+              font-size: 1.25rem;
+              padding: 1.125rem 1.25rem;
+              cursor: pointer;
+            } 
+          }
+        }  
+      }
+
+      &:hover {
+        background-color: #252525;
+
+        .play span {
+          opacity: 1;
+          transform: translateY(-1.25rem);
+        }
+      }
+      
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        color: vars.$font-color-secondary;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-height: 3.875rem;
+
+        & a {
+          display: inline-block;
+          max-width: 100%;
+          vertical-align: middle;
+          color: vars.$font-color-secondary;
+
+          .artist-name {
+            box-sizing: border-box;
+            margin-block: 0px;
+            font-size: 1rem;
+            font-weight: 700;
+            padding-block-end: .5rem;
+          }
+
+          .artist-category {
+            color: vars.$bg-color-scrollbar;
+            font-weight: 400;
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* FIM CARD ARTISTA */

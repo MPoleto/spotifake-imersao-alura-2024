@@ -1,0 +1,11 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+.main__container {
+  grid-area: main;
+  @include mixins.box-section();
+  position: relative;
+  min-height: 32.3rem;
+  min-width: 26.4rem;
+  overflow: hidden;
+}

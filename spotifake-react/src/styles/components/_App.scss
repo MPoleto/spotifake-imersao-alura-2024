@@ -1,0 +1,20 @@
+@use '../abstracts/vars';
+
+.app__container {
+  padding: .5rem;
+  font-family: vars.$font-dm-sans;
+  color: vars.$font-color-principal;
+  
+  &__display {
+    display: grid;
+    grid-template-areas: 
+    "aside main"
+    "footer footer";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    gap: .5rem;
+    width: calc(100vw - scrollbar-width - 1rem);
+    height: calc(100vh - 1rem);
+    position: relative;
+  }
+}

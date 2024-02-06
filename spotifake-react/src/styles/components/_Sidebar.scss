@@ -1,0 +1,209 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+/* MENU NAVEGAÇÃO LATERAL */
+
+.sidebar__container {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  width: 21.875rem;
+  min-height: 32rem;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .sidebar__navigation {
+    flex-shrink: 0;
+    @include mixins.box-section();
+    padding: 1.25rem 1.5rem;
+    margin-bottom: .5rem;
+
+    .logo {
+      background: transparent;
+      img {
+        width: 5rem;
+      }
+    }
+
+    ul {
+      li {
+        padding: 1.5rem 0 .2rem;
+
+        &:first-child {
+          padding-top: 1.2rem;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          color: vars.$font-color-principal;
+          font-weight: 600;
+          font-size: 1rem;
+          transition: .3s;
+
+          span:first-child {
+            margin-right: 1.3rem;
+            font-size: 1.25rem;
+          }
+          &:hover {
+            color: vars.$font-color-secondary;
+          }
+        }
+      }
+    }
+  }
+  /* BIBLIOTECA - MENU */
+
+  .library {
+    @include mixins.box-section();
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: .5rem;
+    min-height: 58vh;
+    
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 1rem;
+      gap: 7.75rem;
+
+      .library__button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding: .5rem .56rem;
+        background-color: transparent;
+        color: vars.$font-color-principal;
+        font-family: vars.$font-dm-sans;
+        font-weight: 600;
+        font-size: 1rem;
+        white-space: nowrap;
+        transition: .3s;
+
+        span:first-child {
+          font-size: 1.25rem;
+        }
+
+        &:hover {
+          color: vars.$font-color-secondary;
+        }
+      }
+      
+      & > span {
+        padding: .5rem .56rem;
+        border-radius: 50%;
+        transition: .2s;
+  
+        &:hover {
+          color: vars.$font-color-secondary;
+          background-color: #181818;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__playlist {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 21.875rem;
+      max-height: 26.5vh;
+      padding: .5rem;
+      overflow-y: auto;
+      scrollbar-color: transparent transparent;
+      scrollbar-width: thin;
+      overscroll-behavior-y: contain;
+      transition: .3s ease-in;
+
+      &:hover {
+        scrollbar-color: vars.$bg-color-scrollbar vars.$bg-color-section;
+      }
+
+      .playlist-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem 1.25rem 1rem;
+        height: 9.25rem;
+        border-radius: vars.$border-radius-section;
+        background-color: vars.$bg-color-playlist;
+        color: vars.$font-color-secondary;
+
+        .card__title {
+          font-size: .95rem;
+          font-weight: 700;
+        }
+        
+        .card__subtitle {
+          font-size: .85rem;
+          font-weight: 500;
+        }
+
+        .card__button {
+          @include mixins.white-button(.875rem, vars.$border-radius-button);
+          padding: .45rem .85rem;
+          margin-top: .375rem;
+
+          &:hover {
+            @include mixins.button-hover();
+          }
+        }
+      }
+    }
+    /* LINKS - COOKIES */
+
+    .sidebar__links {
+      margin: 1.45rem 1.5rem;
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .75rem 1rem;
+        flex-wrap: wrap;
+
+        li {
+          a {
+            color: vars.$font-color-principal;
+            font-size: .69rem;
+            font-weight: 300;
+          }
+          &:nth-last-child(2) {
+            padding-right: 1.2rem;
+          }
+        }
+      }
+    }
+    /* IDIOMA - BOTÃO */
+
+    .languages__button {
+      border-radius: vars.$border-radius-button;
+      border: 1px solid #878787;
+      background-color: transparent;
+      color: vars.$font-color-secondary;
+      font-family: vars.$font-dm-sans;
+      font-size: .88rem;
+      font-weight: 600;
+      padding: .35rem .85rem;
+      margin: .35rem 1.5rem 1.4rem;
+      
+      span:first-child {
+        padding-right: .32rem;
+        font-size: .9rem;
+      }
+
+      &:hover {
+        border: 1px solid vars.$font-color-secondary;
+        transform: scale(1.03);
+      }
+    }
+  }
+}

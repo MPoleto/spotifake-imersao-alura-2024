@@ -1,0 +1,166 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+// SCROLL
+.offer__scroll-container {
+  max-height: 43vh;
+  margin: 1.5rem;
+  padding-bottom: 33vw;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  // FIM SCROLL 
+
+  .offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+
+    .cards {
+      position: relative; 
+      width: 13vw;
+      height: 13vw;
+      border-radius: vars.$border-radius-section;
+      overflow: hidden;
+
+      & {
+        span {
+          padding: 1rem;
+          position: absolute;
+          color: vars.$font-color-secondary;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+  
+        .img-cover {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          height: 6.69rem;
+          width: 6.69rem;
+          transform: rotate(25deg) translate(18%, -2%);
+        }  
+      }
+      
+      /* COLOR E IMAGE CARDS */
+      .card1 {
+        background-color: rgba(0, 100, 80, 0.2);
+        .img1 {
+          background: url('../../assets/playlist/1.jpeg');
+          background-size: contain;
+        }
+      }
+      .card2 {
+        background-color: rgb(132, 0, 231, .2);
+        .img2 {
+          background: url('../../assets/playlist/2.png');
+          background-size: contain;
+        }
+      }
+      .card3 {
+        background: rgb(30, 50, 100, .2);
+        .img3 {
+          background: url('../../assets/playlist/3.jpeg');
+          background-size: contain;
+        }
+      }
+      .card4 {
+        background: rgb(140, 25, 50, .2);
+        .img4 {
+          background: url('../../assets/playlist/4.jpeg');
+          background-size: contain;
+        }
+      }
+      .card5 {
+        background: rgb(232, 17, 91);
+        .img5 {
+          background: url('../../assets/playlist/5.jpeg');
+          background-size: contain;
+        }
+      }
+      .card6 {
+        background: rgb(83, 122, 161, .2);
+        .img6 {
+          background: url('../../assets/playlist/6.jpeg');
+          background-size: contain;
+        }
+      }
+      .card7 {
+        background: rgb(142, 102, 172);
+        .img7 {
+          background: url('../../assets/playlist/7.jpeg');
+          background-size: contain;
+        }
+      }
+      .card8 {
+        background: rgb(20, 138, 8);
+        .img8 {
+          background: url('../../assets/playlist/8.jpeg');
+          background-size: contain;
+        }
+      }
+      .card9 {
+        background: rgb(30, 50, 100);
+        .img9 {
+          background: url('../../assets/playlist/9.jpeg');
+          background-size: contain;
+        }
+      }
+      .card10 {
+        background: rgb(233, 20, 41);
+        .img10 {
+          background: url('../../assets/playlist/10.jpeg');
+          background-size: contain;
+        }
+      }
+      .card11 {
+        background: rgb(80, 55, 80);
+        .img11 {
+          background: url('../../assets/playlist/11.jpeg');
+          background-size: contain;
+        }
+      }
+      .card12 {
+        background: rgb(216, 64, 0);
+        .img12 {
+          background: url('../../assets/playlist/12.jpeg');
+          background-size: contain;
+        }
+      }
+      .card13 {
+        background: rgba(186, 93, 7, 0.5);
+        .img13 {
+          background: url('../../assets/playlist/13.jpeg');
+          background-size: contain;
+        }
+      }
+      .card14 {
+        background: rgba(0, 29, 80, 0.5);
+        .img14 {
+          background: url('../../assets/playlist/14.jpeg');
+          background-size: contain;
+        }
+      }
+      .card15 {
+        background: rgba(60, 30, 80, 0.504);
+        .img15 {
+          background: url('../../assets/playlist/15.jpeg');
+          background-size: contain;
+        }
+      }
+      /* FIM COLOR CARDS */
+    }
+  }
+}
+
+
+
+
+

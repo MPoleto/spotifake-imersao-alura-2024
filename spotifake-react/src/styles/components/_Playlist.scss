@@ -1,0 +1,105 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: .5rem;
+  padding: 4.5rem 0;
+  color: vars.$font-color-secondary;
+  background-color: vars.$bg-color-section;
+  border-radius: vars.$border-radius-section;
+  height: 87vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+  overscroll-behavior-y: contain;
+  transition: .3s ease-in;
+
+  &:hover {
+    scrollbar-color: vars.$bg-color-scrollbar vars.$bg-color-section;
+  }
+
+  .main__footer {
+    margin-top: 12rem;
+    padding: .5rem 2rem;
+
+    &__links {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .links-empresa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 65%;
+
+        &__item {
+          padding: 0 1.5rem 1rem 0;
+
+          & ul li {
+            color: vars.$font-color-principal;
+            font-weight: 500;
+            font-size: .95rem;
+            padding-bottom: 1rem;
+            
+            &:first-child {
+              color: vars.$font-color-secondary;
+              font-weight: 700;
+            }
+
+            a {
+              color: vars.$font-color-principal;
+              transition: .3s;
+
+              &:hover {
+                color: vars.$font-color-secondary;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .social-midias {
+        // width: 40%;
+        & a {
+          margin: 0 1rem .5rem 0;
+          padding: .6rem .75rem;
+          font-size: 1rem;
+          color: vars.$font-color-secondary;
+          background-color: vars.$bg-color-playlist;
+          border-radius: 50%;
+        
+          &:first-child span {
+            font-size: 1.125rem;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover {
+            background-color: vars.$font-color-principal;
+          }
+        }
+      }
+    }
+
+    hr {
+      border-top: none;
+      color: vars.$bg-color-playlist;
+    }
+    
+    .footer__copyright {
+      color: vars.$font-color-principal;
+      font-size: .875rem;
+      font-weight: 500;
+      margin-top: 2.5rem;
+    }
+  }
+}

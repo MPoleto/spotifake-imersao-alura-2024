@@ -1,0 +1,14 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+.greetings__header__title {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1.5rem;
+}
+
+.greetings__header__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+}

@@ -1,0 +1,45 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
+footer {
+  grid-area: footer;
+  position: relative;
+  top: 0;
+  min-height: 4.125rem;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    color: vars.$font-color-secondary;
+    background-image: linear-gradient(to right, #42047e, #05c07b);
+    padding: .625rem 1rem .5rem;
+
+    &__content {
+      min-width: 37.5rem;
+
+      & p:first-child {
+        font-size: .875rem;
+        font-weight: 600;
+        padding-bottom: .125rem;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mixins.white-button(.95rem, 30px);
+      padding: 1rem 1.875vw;
+      margin-right: .625rem;
+      white-space: nowrap;
+
+      &:hover {
+        @include mixins.button-hover();
+        font-weight: 900;
+      }
+    }
+  }
+}

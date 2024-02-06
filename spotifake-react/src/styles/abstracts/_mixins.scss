@@ -1,0 +1,21 @@
+@use './vars';
+
+@mixin box-section() {
+  border-radius: vars.$border-radius-section;
+  background-color: vars.$bg-color-section;
+}
+
+@mixin white-button($font-size, $border-radius) {
+  font-family: vars.$font-dm-sans;
+  font-size: $font-size;
+  font-weight: 700;
+  color: vars.$bg-color-body;
+  background-color: vars.$font-color-secondary;
+  border-radius: $border-radius;
+}
+
+@mixin button-hover() {
+  background-color: vars.$bg-color-button-hover;
+  transform: scale(1.05);
+}
+
