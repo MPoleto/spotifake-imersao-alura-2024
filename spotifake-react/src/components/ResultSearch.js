@@ -8,7 +8,6 @@ export function ResultSearch({getSearchTerm, resultArtist}) {
 
   const [artists, setArtists] = useState([]);
   const previousSearchTerm = useRef("");
-  console.log(getSearchTerm);
 
   const url = `http://localhost:3333/artists?name_like=${getSearchTerm}`;
 
@@ -25,7 +24,7 @@ export function ResultSearch({getSearchTerm, resultArtist}) {
         <div className="grid-container">
           
           {artists.map((artist) => (
-            <div key={artist.id} className="artist-card" id="">
+            <div key={artist.id} className="artist-card">
                 <div className="card-img">
                   <img src={artist.urlImg} id="artist-img" className="artist-img" />
                   <div className="play">

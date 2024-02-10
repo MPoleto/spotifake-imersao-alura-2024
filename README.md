@@ -1,6 +1,6 @@
 # Spotifake - Imersão Alura
 
-Projeto que recria a página do Spotify (resolvi chamar este clone do Spotify de Spotifake). Desenvolvido durante a primeira Imersão Front-end da Alura (01/2024).
+Projeto desenvolvido durante a primeira Imersão Front-end da Alura (01/2024), que recria a página do Spotify (resolvi chamar este clone do Spotify de Spotifake). 
 
 > 🏁 Status: *concluído* 
 
@@ -15,7 +15,7 @@ Projeto que recria a página do Spotify (resolvi chamar este clone do Spotify de
 
 ## Detalhes do projeto
 
-Nos 4 primeiros dias o Spotify Clone foi desenvolvido utilizando HTML, CSS e Javascript. No 5º dia da Imersão foi iniciado uma nova versão do projeto usando React, este foi meu primeiro projeto com react e estilizado com o pré-processador SCSS.
+Nos 4 primeiros dias o Spotify Clone foi desenvolvido utilizando HTML, CSS e Javascript. No 5º dia da Imersão foi iniciado uma nova versão do projeto usando React, sendo este o primeiro projeto que fiz com react e que estilizei com o pré-processador SCSS.
 
 
 ### Dia 1
@@ -58,8 +58,7 @@ Nos 4 primeiros dias o Spotify Clone foi desenvolvido utilizando HTML, CSS e Jav
 - Adicionar arquivo `.json` com dados para simular uma api com o `json.server`, para testar o campo de busca.
 - Desafios:
   - Teste fazer mais cards se baseie na página do Spotify e aprenda muito mais;
-  - ~~Crie um arquivo API JSON diferente e explore mais.~~
-    - Ajustar o layout e a responsividade.
+  - ~~Crie um arquivo API JSON diferente e explore mais.~~  Ao invés de fazer esse desafio, preferi ajustar o layout e a responsividade.
 
 **Resultado do dia 4**  
 ![](./img-readme/resultado-dia-4.gif)
@@ -69,6 +68,7 @@ Nos 4 primeiros dias o Spotify Clone foi desenvolvido utilizando HTML, CSS e Jav
 - Utilizar o framework React para criar o componente `<Header>`;
 - Desafios:
   - Fazer o resto do React.
+  - *Desafio pessoal:* utilizar SCSS para estilizar a página.
   
 **Resultado do dia 5**  
 ![](./img-readme/resultado-dia-5.gif)
