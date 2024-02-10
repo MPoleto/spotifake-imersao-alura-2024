@@ -11,7 +11,7 @@ Projeto desenvolvido durante a primeira Imersão Front-end da Alura (01/2024), q
 | :rocket: URL         | 
 | :fire: Desafio     | Imersão Front-end Alura 2024
   
-![](./img-readme/resultado-dia-5-react.png.png#vitrinedev)
+![](./img-readme/resultado-dia-5-react.png#vitrinedev)
 
 ## Detalhes do projeto
 
@@ -52,6 +52,7 @@ Nos 4 primeiros dias o Spotify Clone foi desenvolvido utilizando HTML, CSS e Jav
 
 ### Dia 4
 - Adicionar os cards da página inicial
+  - CSS Grid
 - Utilizar media queries para responsividade
 - Introduzir o JavaScript no projeto
   - Método Promises
