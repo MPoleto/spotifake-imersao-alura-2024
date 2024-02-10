@@ -14,7 +14,7 @@ footer {
     gap: 1rem;
     width: 100%;
     color: vars.$font-color-secondary;
-    background-image: linear-gradient(to right, #42047e, #05c07b);
+    background-image: linear-gradient(to right, #42047e, vars.$bg-color-details);
     padding: .625rem 1rem .5rem;
 
     &__content {

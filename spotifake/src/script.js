@@ -8,7 +8,7 @@ const hoursNow = new Date().getHours();
 
 function changeGreeting(hours) {
   let message = 'Boas vindas';
-  if (hours > 23 && hours < 5) {
+  if (hours >= 0 && hours < 5) {
     message = "Zzzzzz";
   }
   else if (hours >= 5 && hours < 13) {

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faMagnifyingGlass, faHeadphones, faPlus, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import '../styles/components/_Sidebar.scss'
-import logo from '../assets/icons/logo-spotify.png';
+import logo from '../assets/icons/logo-spotify-green.png';
 
 export function Sidebar() {
   return (

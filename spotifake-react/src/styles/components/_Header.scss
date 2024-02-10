@@ -50,7 +50,7 @@
       
       &:hover {
         background-color: #272727;
-        border: 1px ridge #333;
+        border: 1px ridge vars.$bg-color-button-hover;
       }
 
       input {

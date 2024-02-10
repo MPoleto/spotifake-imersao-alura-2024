@@ -1,20 +1,22 @@
 # Spotifake - Imersão Alura
 
-Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersão Fornt-end da Alura (01/2024).
+Projeto que recria a página do Spotify (resolvi chamar este clone do Spotify de Spotifake). Desenvolvido durante a primeira Imersão Front-end da Alura (01/2024).
 
-> 🚧 Status: *em desenvolvimento* 🚧
+> 🏁 Status: *concluído* 
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Spotifake**
-| :label: Tecnologias | HTML, CSS, JavaScript
+| :label: Tecnologias | HTML, CSS, SASS, JavaScript, React
 | :rocket: URL         | 
 | :fire: Desafio     | Imersão Front-end Alura 2024
-
-<!-- Inserir imagem com a #vitrinedev ao final do link -->
-<!-- ![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev) -->
+  
+![](./img-readme/resultado-dia-5-react.png.png#vitrinedev)
 
 ## Detalhes do projeto
+
+Nos 4 primeiros dias o Spotify Clone foi desenvolvido utilizando HTML, CSS e Javascript. No 5º dia da Imersão foi iniciado uma nova versão do projeto usando React, este foi meu primeiro projeto com react e estilizado com o pré-processador SCSS.
+
 
 ### Dia 1
 
@@ -24,7 +26,7 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
   - Criar a aba "Sua Biblioteca".
 
 **Resultado do dia 1**  
-![](./spotifake/src/assets/img/img-readme/resultado-dia-1.gif)
+![](./img-readme/resultado-dia-1.gif)
 
 ### Dia 2
 - CSS
@@ -35,7 +37,7 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
   - Fazer o rodapé *(footer)*
 
 **Resultado do dia 2**  
-![](./spotifake/src/assets/img/img-readme/resultado-dia-2.gif)
+![](./img-readme/resultado-dia-2.gif)
 
 ### Dia 3
 - Melhorar estrutura do projeto
@@ -46,7 +48,7 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
   - Construir a seção principal da página com os cards de “Boa tarde” e “Navegar por todas as seções”
 
 **Resultado do dia 3**  
-![](./spotifake/src/assets/img/img-readme/resultado-dia-3.gif)
+![](./img-readme/resultado-dia-3.gif)
 
 ### Dia 4
 - Adicionar os cards da página inicial
@@ -56,17 +58,30 @@ Projeto que recria a página do Spotify, desenvolvido durante a primeira Imersã
 - Adicionar arquivo `.json` com dados para simular uma api com o `json.server`, para testar o campo de busca.
 - Desafios:
   - Teste fazer mais cards se baseie na página do Spotify e aprenda muito mais;
-  - Crie um arquivo API JSON diferente e explore mais.
+  - ~~Crie um arquivo API JSON diferente e explore mais.~~
+    - Ajustar o layout e a responsividade.
 
 **Resultado do dia 4**  
-![](./spotifake/src/assets/img/img-readme/resultado-dia-4.gif)
+![](./img-readme/resultado-dia-4.gif)
 
 ### Dia 5  
 - Dar introdução a um projeto React;
 - Utilizar o framework React para criar o componente `<Header>`;
 - Desafios:
-  - Teste fazer mais cards se baseie na página do Spotify e aprenda muito mais;
-  - Crie um arquivo API JSON diferente e explore mais.
-
+  - Fazer o resto do React.
+  
 **Resultado do dia 5**  
-<!-- ![](./spotifake/src/assets/img/img-readme/resultado-dia-5.gif) -->
+![](./img-readme/resultado-dia-5.gif)
+
+  
+### Referências
+
+- [Documentação React - create element](https://react.dev/reference/react/createElement)
+
+- [W3Schools](https://www.w3schools.com/)
+
+- [Passing Data from Child to Parent Components in React](https://medium.com/@ozhanli/passing-data-from-child-to-parent-components-in-react-e347ea60b1bb)
+
+- [How to pass data from one component to other component in ReactJS?](https://www.geeksforgeeks.org/how-to-pass-data-from-one-component-to-other-component-in-reactjs/)
+
+- Cursos Alura - *SASS: CSS sinteticamente espetacular* e *SASS e CSS: estilizando um site*.

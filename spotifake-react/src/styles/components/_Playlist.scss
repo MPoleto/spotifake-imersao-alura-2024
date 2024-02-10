@@ -68,7 +68,6 @@
       }
 
       .social-midias {
-        // width: 40%;
         & a {
           margin: 0 1rem .5rem 0;
           padding: .6rem .75rem;
@@ -84,7 +83,8 @@
             margin-right: 0;
           }
           &:hover {
-            background-color: vars.$font-color-principal;
+            color: vars.$bg-color-body;
+            background-color: vars.$bg-color-button-hover;
           }
         }
       }
