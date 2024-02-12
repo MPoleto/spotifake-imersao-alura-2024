@@ -8,7 +8,7 @@ Projeto desenvolvido durante a primeira Imersão Front-end da Alura (01/2024), q
 | -------------  | --- |
 | :sparkles: Nome        | **Spotifake**
 | :label: Tecnologias | HTML, CSS, SASS, JavaScript, React
-| :rocket: URL         | 
+| :rocket: URL         | https://github.com/MPoleto/spotifake-imersao-alura-2024.git
 | :fire: Desafio     | Imersão Front-end Alura 2024
   
 ![](./img-readme/resultado-dia-5-react.png#vitrinedev)
